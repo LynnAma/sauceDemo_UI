@@ -1,0 +1,11 @@
+{
+  "name": "saucedemo_ui",
+  "version": "1.0.0",
+  "description": "This is to test the sauce demo UI application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
