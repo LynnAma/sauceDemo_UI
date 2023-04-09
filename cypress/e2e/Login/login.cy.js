@@ -1,5 +1,5 @@
 import { LoginPage } from "../../support/pages/Login/login-page";
-import { getStandardUser } from "../../fixtures/get-user";
+import { getStandardUser } from "../../fixtures/index";
 const loginPage = new LoginPage();
 
 let wrongPassword = "secret_saue";
