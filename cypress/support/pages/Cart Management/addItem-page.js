@@ -1,6 +1,6 @@
 export class AddItemPage {
-  addBagPack = () => cy.get(`[id="add-to-cart-sauce-labs-backpack"]`);
-  addSauceLabBike = () => cy.get(`[id="add-to-cart-sauce-labs-bike-light"]`);
+  addBagPack = () => cy.get(`[data-test="add-to-cart-sauce-labs-backpack"]`);
+  addSauceLabBike = () => cy.get(`[data-test="add-to-cart-sauce-labs-bike-light"]`);
   cartBadge = () => cy.get(`[class="shopping_cart_badge"]`);
 
   addTwoItems() {
