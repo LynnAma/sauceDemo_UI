@@ -11,6 +11,17 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
+
+      const baseUrl =
+        config.env.APP_ENV === "production"
+          ? "https://google.com/"
+          : "https://www.saucedemo.com/";
+
+      config.baseUrl = baseUrl;
+
+      return config;
     },
+
+    
   },
 });

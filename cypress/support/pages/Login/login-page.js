@@ -46,7 +46,7 @@ export class LoginPage {
   }
 
   accessLoginModal() {
-    cy.visit("https://www.saucedemo.com/");
+    cy.visit("/");
     cy.get(`[class="login_logo"]`).contains("Swag Labs");
   }
 }
