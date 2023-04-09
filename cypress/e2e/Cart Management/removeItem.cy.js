@@ -1,7 +1,7 @@
 import { LoginPage } from "../../support/index";
 import { AddItemPage } from "../../support/index";
 import { RemoveItemPage } from "../../support/index";
-import {getStandardUser} from "../../fixtures/index"
+import { getStandardUser } from "../../fixtures/index";
 
 const loginPage = new LoginPage();
 const addItemPage = new AddItemPage();

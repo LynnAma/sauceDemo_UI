@@ -1,6 +1,6 @@
 import { LoginPage } from "../../support/index";
 import { AddItemPage } from "../../support/index";
-import {getStandardUser} from "../../fixtures/index";
+import { getStandardUser } from "../../fixtures/index";
 import { ViewItemsPage } from "../../support/index";
 
 const loginPage = new LoginPage();

@@ -1,5 +1,5 @@
 import { LoginPage } from "../../support/pages/Login/login-page";
-import {getStandardUser} from "../../fixtures/index";
+import { getStandardUser } from "../../fixtures/index";
 import { SortPage } from "../../support/index";
 
 const loginPage = new LoginPage();

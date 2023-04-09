@@ -1,6 +1,6 @@
 import { LoginPage } from "../../support/index";
 import { AddItemPage } from "../../support/index";
-import {getStandardUser} from "../../fixtures/index";
+import { getStandardUser } from "../../fixtures/index";
 import { ViewItemsPage } from "../../support/index";
 import { CheckOutPage } from "../../support/index";
 
@@ -21,7 +21,11 @@ describe("Checkout", () => {
     loginPage.sucessfulLogin();
     addItemPage.addTwoItems();
     viewCartPage.viewCart();
-    checkoutPage.navigateAndEnterDetails(getUser.firstName, getUser.lastName, getUser.zipCode);
+    checkoutPage.navigateAndEnterDetails(
+      getUser.firstName,
+      getUser.lastName,
+      getUser.zipCode
+    );
     checkoutPage.verifyInfoAndCheckout();
   });
 });
