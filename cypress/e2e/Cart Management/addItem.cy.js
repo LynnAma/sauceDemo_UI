@@ -1,5 +1,5 @@
 import { LoginPage } from "../../support/pages/Login/login-page";
-import { AddItemPage } from "../../support/pages/Cart Management/addItem-page";
+import { AddItemPage } from "../../support/index";
 import {getStandardUser} from "../../fixtures/index";
 
 const loginPage = new LoginPage();

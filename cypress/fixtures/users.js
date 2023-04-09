@@ -10,6 +10,9 @@ export const role = {
       role: role.standardUser,
       username: "standard_user",
       password: "secret_sauce",
+      firstName: "Ama",
+      lastName: "Lynn",
+      zipCode: "100232"
       
     },
     {

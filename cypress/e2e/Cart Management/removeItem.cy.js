@@ -1,6 +1,6 @@
-import { LoginPage } from "../../support/pages/Login/login-page";
-import { AddItemPage } from "../../support/pages/Cart Management/addItem-page";
-import { RemoveItemPage } from "../../support/pages/Cart Management/removeItem-page";
+import { LoginPage } from "../../support/index";
+import { AddItemPage } from "../../support/index";
+import { RemoveItemPage } from "../../support/index";
 import {getStandardUser} from "../../fixtures/index"
 
 const loginPage = new LoginPage();

@@ -1,4 +1,4 @@
-import { LoginPage } from "../../support/pages/Login/login-page";
+import { LoginPage } from "../../support/index";
 import { getStandardUser } from "../../fixtures/index";
 const loginPage = new LoginPage();
 
