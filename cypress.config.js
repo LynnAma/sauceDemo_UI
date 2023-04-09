@@ -7,7 +7,6 @@ module.exports = defineConfig({
   watchForFileChanges: false,
   viewportWidth: 1280,
   viewportHeight: 800,
-  
 
   e2e: {
     setupNodeEvents(on, config) {

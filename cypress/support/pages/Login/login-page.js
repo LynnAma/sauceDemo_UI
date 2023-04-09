@@ -1,4 +1,3 @@
-
 export class LoginPage {
   itemsListPage = () => cy.get(`[class="app_logo"]`).contains("Swag Labs");
   usernameField = () => cy.get(`input[data-test="username"]`);
@@ -6,15 +5,23 @@ export class LoginPage {
   loginButton = () => cy.get(`input[data-test="login-button"]`);
 
   wrongCombination() {
-    cy.get("h3").contains("Epic sadface: Username and password do not match any user in this service").should("be.visible");
+    cy.get("h3")
+      .contains(
+        "Epic sadface: Username and password do not match any user in this service"
+      )
+      .should("be.visible");
   }
 
   noPassword() {
-    cy.get("h3").contains("Epic sadface: Password is required").should("be.visible");
+    cy.get("h3")
+      .contains("Epic sadface: Password is required")
+      .should("be.visible");
   }
 
   noUsername() {
-    cy.get("h3").contains("Epic sadface: Username is required").should("be.visible");
+    cy.get("h3")
+      .contains("Epic sadface: Username is required")
+      .should("be.visible");
   }
 
   sucessfulLogin() {
@@ -36,5 +43,10 @@ export class LoginPage {
 
   enterOnlyPassword(password) {
     this.passwordField().type(password);
+  }
+
+  accessLoginModal() {
+    cy.visit("https://www.saucedemo.com/");
+    cy.get(`[class="login_logo"]`).contains("Swag Labs");
   }
 }
